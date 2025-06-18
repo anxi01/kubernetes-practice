@@ -1,0 +1,14 @@
+# nginx-pod.yaml
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: nginx-server
+
+spec:
+  containers:
+    - name: nginx-server
+      image: nginx
+
+      ports:
+        - containerPort: 80
